@@ -1,0 +1,139 @@
+:root{
+    /*Cores padrão a serem usadas através do var*/
+    --vermelho: #E50914;;
+    --preta: #141414;
+}
+ 
+*{  /*Reset na página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------Elemento base--------------------*/ 
+
+body{
+    /*Editando a cor de fundo, a fonte e a cor das palavreas do tópicos*/
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    /*Editando o posicionamento dos tópicos como a rederização, deixar os tópicos lado a lado, centralizar os itens e espaçamento do NETFLIX para o tópico*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo{
+    /*Editando o logo da NETFLIX (espaçamento da margem, cor, fonte e tamanho*/
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*-----------------Categorias de filmes-------------------*/
+.categoria-filmes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    color: rgb(245, 245, 245);
+    margin: 5px;
+}
+
+.destaque{
+    margin-top: 15px;
+}
+
+/*-----------------Filme principal--------------------*/ 
+
+.filme-principal{
+    /*Editando fonte e transparencia da descrição do filme*/
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/lucifer.jpg');
+
+    /*Editando imagem de fundo "Lucifer" e seu tamanho*/
+    height: 400px;
+    background-size:cover;
+
+    /*Edição do botão*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    /*Editando o espaçamento entre a descrição do filme para os botões*/
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    /*Editando o tamanho da fonte do titulo do filme principal*/
+    margin-top: 15%;
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.filme-principal .botao{
+    /*Editando a cor de fundo do botão, borda e cor das palavras e espaçamento da*/
+    background-color: rgba(0, 0, 0, 50);
+    border: none;
+    color: white;
+    margin-left: 20px;
+
+    /*Editando o espaçamento interno do botão, distancia de um botao para o outro e a fonte*/
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    /*adicionando um cursor para demonstrar que ali tem um botão e colocar a cor quando o mause passa em cima*/
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    /*Editando a cor do botão quando você passa com o mouse em cima dele*/
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    /*Espaçamento do icones Play e Info dentro do conteiner*/
+    margin-right: 8px;
+}
+
+.container{
+    /*Espaçamento da borda da tela da página inicial toda*/
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    /*Editando largura da descrição do filme pricipal*/
+    width: 60%;
+}
+
+.box-filme{
+    /*Tamanho das imagens dos filmes do carroel*/
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrocel-filme{
+    /*Espaçamento entre o carrocel de filmes para o conteiner do filme principal*/
+    margin-top: 5px;
+}

@@ -1,0 +1,21 @@
+/*Código para formatar o site quando a tela fica em tamanho menores*/
+
+@media screen and (max-width:700px) { /*Editando o que tem dentro do container e para ficarem em colunas assim que a tela ficar menor no máximo em 700 pixels*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{  /*Editando o tamanho do botão quando a tela ficar menor*/
+        margin-top: 5px;
+        width: 300px;
+        height: 50px;
+    }
+}
+
+/*Códgio para formalizar a descrição de acordo com o tamanho da tela*/
+@media screen and (min-width:1000px){
+    .descricao{
+    width: 50%;
+    }
+}
